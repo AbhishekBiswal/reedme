@@ -11,9 +11,19 @@ app.config.update(
 )
 
 # controllers
-@app.route('/')
-def index():
-	return render_template('index.html')
+@app.route('/<path:url>')
+def index(url):
+	url = "http://"+url
+	finalUrl = "https://www.readability.com/api/content/v1/parser?url="+url+"&token=24b51ae751a061db205c4366fbdb7f4b267be3de"
+	import urllib2
+	response = urllib2.urlopen(finalUrl)
+	html=response.read()
+	web = json.loads(html)
+	return render_template("render.html", web=web)
+
+@app.route("/")
+def home():
+	return "welcome home"
 
 @app.route('/about')
 def about():

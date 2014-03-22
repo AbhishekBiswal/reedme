@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>{{ web['title'] }}</title>
+		<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Libre+Baskerville:400,700/Open+Sans:400,700">
+		<link rel="stylesheet" href="/static/css/read.css">
+	</head>
+	<body>
+
+		<h1>{{ web['title'] }}</h1>
+		<h4>{{ web['word_count'] }} words | <a href="{{ web['url'] }}">Permalink</a></h4>
+
+		<div class="content">{{ web['content']|safe }}</div>
+		
+	</body>
+</html>
