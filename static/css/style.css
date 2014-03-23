@@ -41,6 +41,24 @@ a
 }
 .info p { margin-bottom: 5px; }
 
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+
+	body
+	{
+		/* background: #000; */
+	}
+
+	.half, .half-r
+	{
+		width: 100% !important;
+		display: block !important;
+		clear: both;
+	}
+
+}
+
 .clear
 {
 	clear: both;
