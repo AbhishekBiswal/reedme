@@ -24,7 +24,9 @@ def redirect_www():
 # controllers
 @app.route('/<path:url>', methods=['GET'])
 def index(url):
-	if url.find('http://') == -1:
+	if url.find('https://') != -1:
+		url = url.replace("https://","http://")
+	if url.find('http://') == -1 and url.find('https://') == -1:
 		url = "http://"+url
 	key = ['448add193d4827f4594d1ce2342f64eac01ddc36','24b51ae751a061db205c4366fbdb7f4b267be3de']
 	import random
