@@ -11,7 +11,7 @@ app.config.update(
 )
 
 # controllers
-@app.route('/<path:url>')
+@app.route('/<path:url>', methods=['GET'])
 def index(url):
 	if url.find('http://') == -1:
 		url = "http://"+url

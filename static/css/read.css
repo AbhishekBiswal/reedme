@@ -4,6 +4,38 @@ body
 	margin: 0 auto;
 }
 
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+	
+	body
+	{
+		width: 90% !important;
+	}
+
+	.reedme
+	{
+		width: 100%;
+	}
+	.reedme img
+	{
+		width: 50px;
+		margin: 0 auto;
+	}
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	.reedme
+	{
+		position: fixed;
+		top: 10px;
+		left: 10px;
+	}
+}
+
 h1
 {
 	font-family: "Open Sans", Arial, sans-serif;
@@ -65,4 +97,15 @@ h4.info a
 .content a
 {
 	color: #000;
+}
+
+.footer
+{
+	margin: 20px 0;
+}
+
+.share div
+{
+	margin-bottom: 10px;
+	display: inline-block;
 }
