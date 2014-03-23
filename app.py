@@ -15,7 +15,12 @@ app.config.update(
 def index(url):
 	if url.find('http://') == -1:
 		url = "http://"+url
-	finalUrl = "https://www.readability.com/api/content/v1/parser?url="+url+"&token=24b51ae751a061db205c4366fbdb7f4b267be3de"
+	key[0] = '448add193d4827f4594d1ce2342f64eac01ddc36'
+	key[1] = '24b51ae751a061db205c4366fbdb7f4b267be3de'
+	import random
+	number = random.randint(0,1)
+	randomKey = key[number]
+	finalUrl = "https://www.readability.com/api/content/v1/parser?url="+url+"&token="+randomKey
 	import urllib2
 	response = urllib2.urlopen(finalUrl)
 	html=response.read()
