@@ -15,8 +15,7 @@ app.config.update(
 def index(url):
 	if url.find('http://') == -1:
 		url = "http://"+url
-	key[0] = '448add193d4827f4594d1ce2342f64eac01ddc36'
-	key[1] = '24b51ae751a061db205c4366fbdb7f4b267be3de'
+	key = ['448add193d4827f4594d1ce2342f64eac01ddc36','24b51ae751a061db205c4366fbdb7f4b267be3de']
 	import random
 	number = random.randint(0,1)
 	randomKey = key[number]
