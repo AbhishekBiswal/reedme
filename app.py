@@ -10,6 +10,17 @@ app.config.update(
 	SECRET_KEY = 'de2bd1431941f180a22cb2169fa6d80a0a0cbaeea597e215'
 )
 
+from urlparse import urlparse, urlunparse
+
+@app.before_request
+def redirect_www():
+    """Redirect www requests to non-www."""
+    urlparts = urlparse(request.url)
+    if urlparts.netloc == 'www.reedme.in':
+        urlparts_list = list(urlparts)
+        urlparts_list[1] = 'reedme.in'
+        return redirect(urlunparse(urlparts_list), code=301)
+
 # controllers
 @app.route('/<path:url>', methods=['GET'])
 def index(url):
