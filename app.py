@@ -23,7 +23,7 @@ def index(url):
 
 @app.route("/")
 def home():
-	return "welcome home"
+	return render_template("index.html", pageTitle="reedme home")
 
 @app.route('/about')
 def about():

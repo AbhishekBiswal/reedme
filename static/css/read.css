@@ -1,18 +1,68 @@
 body
 {
-	width: 80%;
+	width: 60%;
 	margin: 0 auto;
 }
 
 h1
 {
 	font-family: "Open Sans", Arial, sans-serif;
-	margin: 20px 0;
+	margin: 0 0 20px;
+	display: block;
+	font-size: 250%;
+	font-weight: normal;
+	text-align: center;
+	padding: 5px 0;
+	border-bottom: 1px solid #ddd;
+}
+h2.domain-name { display: block; margin: 10px 0 0 0; }
+h2.domain-name a
+{
+	display: block;
+	text-decoration: none;
+	color: #999;
+	margin-top: 5px;
+	font-size: 60%;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+h4.info
+{
+	text-align: center;
+	display: block;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+	font-size: 80%;
+	font-weight: normal;
+	color: #999;
+}
+h4.info a
+{
+	color: #999;
+	text-decoration: none;
 }
 
 .content
 {
-	font-family: "Libre Baskerville", sans-serif;
+	font-family: "Droid Serif", serif;
 	line-height: 1.4;
-	font-size: 140%;
+	font-size: 150%;
+	color: #222;
+}
+
+.content h1, .content h2, .content h3
+{
+	font-size: 150%;
+	color: #333;
+	margin: 20px 0 0;
+}
+.content h1 a, .content h2 a, .content h3 a
+{
+	color: #333;
+	text-decoration: none;
+}
+.content a
+{
+	color: #000;
 }
