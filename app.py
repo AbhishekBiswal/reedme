@@ -13,7 +13,8 @@ app.config.update(
 # controllers
 @app.route('/<path:url>')
 def index(url):
-	url = "http://"+url
+	if url.find('http://') == -1:
+		url = "http://"+url
 	finalUrl = "https://www.readability.com/api/content/v1/parser?url="+url+"&token=24b51ae751a061db205c4366fbdb7f4b267be3de"
 	import urllib2
 	response = urllib2.urlopen(finalUrl)
