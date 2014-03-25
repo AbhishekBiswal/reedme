@@ -1,1 +1,90 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ pageTitle }}</title>
+		<meta name="description" content="Quickly render a cleaner, simpler, readable version of an online article or blog post.">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/static/css/style.css">
+
+		<meta property="og:title" content="ReedMe : The New Web View."/>
+		<meta property="og:image" content="http://reedme.in/static/img/logo.png"/>
+		<meta property="og:description" content="Read an article or blog post in a much simpler, readable layout, with a simple and easy step.">
+
+	</head>
+
+	<body>
+
+		<center><img src="/static/img/logo.png"></center>
+
+		<div class="info">
+			<div class="half">
+				<h2>A new, cleaner, simpler Web View</h2>
+			</div>
+			<div class="half-r">
+				<p>Stumbled upon an article, but skipped just because the layout of the website sucked? Or made it difficult for you to read the text?</p>
+				<p>We want to solve this problem by providing a platform which loads the same readable content from the website or blog, and displays it in a much cleaner, simpler, and readable format. Without all the unnecessary stuff.</p>
+				<p>All you need to do is add reedme.in just before the url of the website in your address bar and bam!</p>
+			</div>
+		</div>
+
+		<div class="clear"></div>
+		<div class="divider"></div>
+		<div class="info tut">
+			
+			<h3>All you need to do is, open the article in your favorite browser.</h3>
+			<h4>lifehacker.com/top-10-ways-to-beat-a-bad-mo....</h4>
+			<h3>And add reedme.in in the address bar, just before the URL</h3>
+			<h4><span class="red">reedme.in/</span>lifehacker.com/top-10-ways-to-beat-a-bad-mo....</h4>
+
+		</div>
+
+		<div class="clear"></div>
+		<div class="divider"></div>
+
+
+		<div class="info grey-info">
+			
+			<h2>Install our Chrome extension:</h2>
+			<ol>
+				<li>Download the extension : <a target="_blank" href="https://raw.githubusercontent.com/AbhishekBiswal/ReedMeExt/master/reedmeChrome.crx">Click</a></li>
+				<li>Open new tab and type in chrome://extensions in the adress bar.</li>
+				<li>Drag and drop the downloaded file on the tab opened in step 2.</li>
+				<li>Click on the ReedMe extension on chrome to display the current web page in web view.</li>
+			</ol>
+
+		</div>
+
+		<div class="clear"></div>
+		<div class="divider"></div>
+
+		<div class="info">
+			
+			<center><h2>Take a Sneak Peak : <u><a href="/lifehacker.com/this-weeks-most-popular-posts-march-14th-to-21st-1548731748">Read this on reedme</a></u></h2></center>
+
+		</div>
+
+		<div class="clear"></div>
+		
+		<div class="footer">
+			&copy; reedme 2014.<br>
+			By <a target="_blank" href="http://twitter.com/Abhishek_Biswal">Abhishek Biswal</a> and <a target="_blank" href="http://twitter.com/adityar03">Aditya Ravindran</a>.
+			<br>
+			"Let I breathe, Jedi Knight"
+		</div>
+
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49286248-1', 'reedme.in');
+  ga('send', 'pageview');
+
+</script>
+
+	</body>
+
+</html>

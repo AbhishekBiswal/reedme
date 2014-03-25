@@ -83,6 +83,11 @@ h4.info a
 	color: #222;
 }
 
+.content img
+{
+	max-width: 100%;
+}
+
 .content h1, .content h2, .content h3
 {
 	font-size: 150%;

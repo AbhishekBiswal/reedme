@@ -43,10 +43,6 @@ def index(url):
 def home():
 	return render_template("index.html", pageTitle="reedme home")
 
-@app.route('/about')
-def about():
-	return render_template('about.html')
-
 # special file handlers
 @app.route('/favicon.ico')
 def favicon():
